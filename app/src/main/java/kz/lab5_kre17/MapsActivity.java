@@ -461,12 +461,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    // Нажатие на кнопку маркера
-    public void onClickButtonMarker(View view) {
-        String idMarker = view.getTag().toString();
-        onMarkerClick(idMarker);
-    }
-
     // Обработчик "Подробно"
     public void detailExpandOnClick(View view) {
         if (!markerFileName.equals("")) {
