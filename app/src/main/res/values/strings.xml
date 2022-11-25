@@ -8,4 +8,42 @@
     <string name="back">НАЗАД</string>
     <string name="tMarker">tMarker</string>
     <string name="mfile">mfile</string>
+
+    <string-array name="religioznieObedineniya">
+        <item>@string/marker1_txt_click</item>
+        <item>@string/marker2_txt_click</item>
+        <item>@string/marker3_txt_click</item>
+        <item>@string/marker4_txt_click</item>
+        <item>@string/marker5_txt_click</item>
+        <item>@string/marker6_txt_click</item>
+        <item>@string/marker7_txt_click</item>
+        <item>@string/marker8_txt_click</item>
+        <item>@string/marker9_txt_click</item>
+        <item>@string/marker10_txt_click</item>
+        <item>@string/marker11_txt_click</item>
+        <item>@string/marker12_txt_click</item>
+        <item>@string/marker13_txt_click</item>
+        <item>@string/marker14_txt_click</item>
+        <item>@string/marker15_txt_click</item>
+        <item>@string/marker16_txt_click</item>
+        <item>@string/marker17_txt_click</item>
+        <item>@string/marker18_txt_click</item>
+        <item>@string/marker19_txt_click</item>
+        <item>@string/marker20_txt_click</item>
+        <item>@string/marker21_txt_click</item>
+        <item>@string/marker22_txt_click</item>
+        <item>@string/marker23_txt_click</item>
+        <item>@string/marker24_txt_click</item>
+        <item>@string/marker25_txt_click</item>
+        <item>@string/marker26_txt_click</item>
+        <item>@string/marker27_txt_click</item>
+        <item>@string/marker28_txt_click</item>
+        <item>@string/marker29_txt_click</item>
+        <item>@string/marker30_txt_click</item>
+        <item>@string/marker31_txt_click</item>
+        <item>@string/marker32_txt_click</item>
+        <item>@string/marker33_txt_click</item>
+        <item>@string/marker34_txt_click</item>
+        <item>@string/marker35_txt_click</item>
+    </string-array>
 </resources>

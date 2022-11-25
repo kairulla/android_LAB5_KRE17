@@ -10,7 +10,10 @@ import android.Manifest;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.core.app.ActivityCompat;
@@ -34,6 +37,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private String markerTitle = ""; // Название выбранного маркера
     private String markerFileName = ""; // Имя файла с подробными данными выбранного маркера
+    private Spinner spinnerReligioznieObedineniya;
 
     private final int SITYSCALE = 15; // Масштаб для отображения карты
 
@@ -90,7 +94,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        textView = findViewById(R.id.textViewInfo); // Доступ к компоненту "textViewInfo"
+        textView = (TextView) findViewById(R.id.textViewInfo); // Доступ к компоненту "textViewInfo"
+        spinnerReligioznieObedineniya = (Spinner) findViewById(R.id.spinnerReligioznieObedineniya);
+        spinnerReligioznieObedineniya.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+                String idMarker = "m".concat(String.valueOf(spinnerReligioznieObedineniya.getSelectedItemId() + 1));
+                onMarkerClick(idMarker);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+            }
+
+        });
     }
 
     private BitmapDescriptor bitmapDescriptorFromVector(Context context, int vectorResId) {
